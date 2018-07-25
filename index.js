@@ -11,7 +11,7 @@ if(major < 7 || (major === 7 && minor <= 5)) {
 require('dotenv').config({ path: '.env'});
 
 //Connect to our Database
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 mongoose.promise = global.Promise;
 mongoose.connection.on('error', err => {
   console.error(err.message);
