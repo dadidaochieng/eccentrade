@@ -25,16 +25,16 @@ const companySchema = new Schema({
     trim: true,
     default: null,
   },
-  main_or_branch_office_indicator: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'HQBranch',
-    default: null,
-  },
-  rsi_main_or_branch_office_indicator: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'RSI',
-    default: null,
-  },
+  // main_or_branch_office_indicator: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'HQBranch',
+  //   default: null,
+  // },
+  // rsi_main_or_branch_office_indicator: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: 'RSI',
+  //   default: null,
+  // },
   previous_chamber_number: {
     type: String,
     trim: true,
@@ -236,7 +236,7 @@ const companySchema = new Schema({
   sex: {
     type: String,
     trim: true,
-    enum: ['M', 'F'],
+    // enum: ['M', 'F'],
     default: null,
   },
   rsi_sex: {
