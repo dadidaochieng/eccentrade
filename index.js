@@ -18,7 +18,9 @@ mongoose.connection.on('error', err => {
 });
 
 // Import models
-// require('./models');
+require('./models/RSI');
+require('./models/HQBranch');
+require('./models/Company');
 
 //Start App
 const app = require('./app');
